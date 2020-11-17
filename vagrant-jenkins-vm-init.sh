@@ -47,6 +47,6 @@ fi
 ##################################################################
 #run
 if [ "$setupJenkins" = true ]; then
-    DOCKER_COMPOSE_FILE_PATH=/home/docker/jenkins-docker-compose.yml
-    sudo docker-compose -f $DOCKER_COMPOSE_FILE_PATH up -d
+    JENKINS_DOCKER_COMPOSE_FILE_PATH=/home/docker/jenkins/jenkins-docker-compose.yml
+    sudo docker-compose -f $JENKINS_DOCKER_COMPOSE_FILE_PATH up -d
 fi

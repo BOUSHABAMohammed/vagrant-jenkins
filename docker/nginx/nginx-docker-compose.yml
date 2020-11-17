@@ -8,4 +8,4 @@ services:
     environment:
       - TARGET_ENV=development
     volumes:
-      - "/home/docker:/usr/share/nginx/html"
+      - "/home/docker/nginx:/usr/share/nginx/html"
