@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mynginx:
+    build: ./
+    container_name: mynginx
+    ports:
+      - 9090:80
+    environment:
+      - TARGET_ENV=development
+    volumes:
+      - "/home/docker:/usr/share/nginx/html"
